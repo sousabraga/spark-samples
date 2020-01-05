@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 public class AirportsByLatitude {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		SparkConf conf = new SparkConf().setAppName("airports").setMaster("local[2]");
         JavaSparkContext sc = new JavaSparkContext(conf);
         

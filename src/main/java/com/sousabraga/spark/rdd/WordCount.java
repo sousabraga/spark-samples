@@ -9,7 +9,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 public class WordCount {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		SparkConf conf = new SparkConf().setAppName("wordCounts").setMaster("local[3]");
 		JavaSparkContext sc = new JavaSparkContext(conf);
 		
